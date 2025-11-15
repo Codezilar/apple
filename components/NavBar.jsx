@@ -1,5 +1,5 @@
 "use client"
-import { nav } from '@/data'
+import { navLinks } from '@/data'
 import Link from 'next/link'
 import React from 'react'
 
@@ -9,7 +9,7 @@ const NavBar = () => {
         <nav>
             <img src={'/logo.svg'} alt='logo' />
             <ul>
-                {nav.map((link) => (
+                {navLinks.map((link) => (
                     <Link href={''} key={link.label}>
                         {link.label}
                     </Link>
